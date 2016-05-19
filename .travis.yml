@@ -2,17 +2,21 @@ sudo: false
 language: node_js
 cache:
   directories:
-    - node_modules
+  - node_modules
 node_js:
-  - 4.3
-  - stable
+- 4.3
+- stable
 before_install:
-  - npm i -g npm
+- npm i -g npm
 script:
-  - npm t
+- npm t
 after_success: travis-after-all && npm run semantic-release
 deploy:
   provider: npm
   skip_cleanup: true
-  'on':
+  on:
     repo: economist-data-team/
+env:
+  global:
+  - secure: Jcjjb7uOVW5AMuSsECvrGgFqWgcrPb+FA7r3Qlrr/+VgVdJAvxu+4AEGUi4S5Ty7F/j5KwCfa2k6o/fAtVDD28OicDyq/ZZeRjkc/uIzhLHVXdc1d2YLFLgouReuPdU30TlE/wTWrEKeaOfrNz/l55cvXUMFqei24v3V+EU8URKoOmrJ+GWUlQt1uRk7InjRhC+j98A9q894S9DfXP5wUHS4q9Ya7b0FP7n4Blk5Ci6xyFl+SIMK/ziLZHei/BZWzW8/L7gNQMLbqsrs85H/+oOPAoZ6sDwC+8nuZoE6ItGSHX8480Y4ltOLUXYL8tMMi1IkSkFHgni3J8I0xgxvZAdthmPOax1kIrVAZs14AMM9abIrrYJspjzHF6jReY4UksdUIP8i1YXWaKwluTTgQjhA7L89MNYKbk4AZQbM62gVP7joilAjBCExmIS8rkDAuzRDx5uybZWxBFIrsYKYvTDXm95WClZPmdNHc/qW/xtXuz7hNiCcHQJIdwIsqqWahSSeIosyE+AfwHveeu4z5Se2cND/ha7umdMkLL5heVLNer1WUTdQKxYnhg9kZ6asY9PBWsfqqmw9QilTX7OlwqdLrAxhxlFIGNvU03OF/8W9qLlOnQ7Qf5GVxxoeiEUtJgpa/CqIlZG4tLSa7pv5z9MBBRxqzQirZ6NhBQKuyDw=
+  - secure: nZU8N85B6c2grWS0jPIqLhbogYMhxmeRIKW/2TZhnEwFFh+ouQCXIhQpdaUvZN+cXkS2nvGQO7RolQzwgh9iX/auXHxVLZ5FSEPptRmPxmgIKnNqTQgOgtu8/1UQ1+GgkrCyZ53kLE3ytFKkegBAFJfODr5jg+KLzGHHP88UIZDzqi4szlEN72s0YS4f/vgQFqYHBd4IFJ/0zLQbLUUvGVeB1YMOGcHC8z5rFxaUfhFNiZKGmAHlyK5yPpdGmiKv2Dy4fQN+zrHk4VNTJ3D7PBEZasET3Tui+KYt6Jfcy47iTqz58ph2b+cKFtupvELlTDL7XHu3slYVP0GpdzTH/ADbXsv/5RITKBJjJOoiZfMFAtpqprXN8dYzkYnV8xCDeLkE8ZTGzS2ZyLmsdF4+LJr2Ef4sZZJOYl+IUlflkM0cJpQY3IGYdpgc/7FzI4Y+8WpqJjfodHeED4lzwZJdAK4XPGg+2fRTR36GvTSJMJbOGoLBUkKcH1Eu+BC8dy1+iMwYGRJ+zNCSQ/y9kv0oS505eYSdTxBoH6BYUDm0m9ZeFuJe6QFYHTGfeC8tjSEEQoVceYPU3KPAP2D39kQHkYSqeRwpBROXRGpaWzLPRoTxHANA/vgg6pKXAGVZdJm+EJHbnv0yPFwOse+c291Q1rppt1CmmMKQrIF+ET4/pzE=
