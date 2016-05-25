@@ -15,7 +15,7 @@ deploy:
   provider: npm
   skip_cleanup: true
   on:
-    repo: economist-data-team/
+    repo: economist-data-team/utility-dti-parsemarginarray
 env:
   global:
   - secure: Jcjjb7uOVW5AMuSsECvrGgFqWgcrPb+FA7r3Qlrr/+VgVdJAvxu+4AEGUi4S5Ty7F/j5KwCfa2k6o/fAtVDD28OicDyq/ZZeRjkc/uIzhLHVXdc1d2YLFLgouReuPdU30TlE/wTWrEKeaOfrNz/l55cvXUMFqei24v3V+EU8URKoOmrJ+GWUlQt1uRk7InjRhC+j98A9q894S9DfXP5wUHS4q9Ya7b0FP7n4Blk5Ci6xyFl+SIMK/ziLZHei/BZWzW8/L7gNQMLbqsrs85H/+oOPAoZ6sDwC+8nuZoE6ItGSHX8480Y4ltOLUXYL8tMMi1IkSkFHgni3J8I0xgxvZAdthmPOax1kIrVAZs14AMM9abIrrYJspjzHF6jReY4UksdUIP8i1YXWaKwluTTgQjhA7L89MNYKbk4AZQbM62gVP7joilAjBCExmIS8rkDAuzRDx5uybZWxBFIrsYKYvTDXm95WClZPmdNHc/qW/xtXuz7hNiCcHQJIdwIsqqWahSSeIosyE+AfwHveeu4z5Se2cND/ha7umdMkLL5heVLNer1WUTdQKxYnhg9kZ6asY9PBWsfqqmw9QilTX7OlwqdLrAxhxlFIGNvU03OF/8W9qLlOnQ7Qf5GVxxoeiEUtJgpa/CqIlZG4tLSa7pv5z9MBBRxqzQirZ6NhBQKuyDw=
