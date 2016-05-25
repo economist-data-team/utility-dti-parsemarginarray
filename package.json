@@ -67,7 +67,8 @@
     ]
   },
   "dependencies": {
-    "@economist/utility-dti-isnumeric": "^1.0.0"
+    "@economist/utility-dti-isnumeric": "^1.0.0",
+    "travis-after-all": "^1.4.4"
   },
   "devDependencies": {
     "babel": "^5.8.34",
